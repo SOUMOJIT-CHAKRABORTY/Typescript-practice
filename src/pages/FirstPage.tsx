@@ -1,16 +1,17 @@
 import React from "react";
-import { IoAddCircleOutline } from "react-icons/io";
+import { FaHome } from "react-icons/fa";
 
 function FirstPage() {
   return (
-    <div className="">
-      <div className="bg-cover border border-black bg-center ">
-        <img
-          src="https://images.unsplash.com/photo-1634270874854-3c7492905b74?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTZ8fHB1cnBsZSUyMGJhY2tncm91bmR8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
-          className="w-full h-[200px]"
-        />
-        <IoAddCircleOutline />
-      </div>
+    <div className=" items-center my-auto">
+   <div className="flex items-center mt-5 justify-center">
+    <FaHome className="text-3xl" />
+    <h1 className="text-2xl">Add Todo</h1>
+   </div>
+   <div className="flex items-center mt-5 justify-center space-x-3">
+   <input placeholder="Add a todo" className="text-center rounded-lg border border-gray-700 px-2 py-2" />
+   <button className="bg-blue-700 px-4 rounded-lg text-lg text-white" >Add</button>
+   </div>
     </div>
   );
 }
